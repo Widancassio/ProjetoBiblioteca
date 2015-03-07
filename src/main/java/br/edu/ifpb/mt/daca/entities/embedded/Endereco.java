@@ -1,8 +1,6 @@
 package br.edu.ifpb.mt.daca.entities.embedded;
 
-import javax.persistence.Column;
 import javax.persistence.Embeddable;
-
 
 @Embeddable
 public class Endereco {
@@ -12,62 +10,50 @@ public class Endereco {
 	private String cidade;
 	private long cep;
 	private int numero;
-	
-	
+
 	public Endereco() {
 		// TODO Auto-generated constructor stub
 	}
-
 
 	public String getRua() {
 		return rua;
 	}
 
-
 	public void setRua(String rua) {
 		this.rua = rua;
 	}
-
 
 	public String getBairro() {
 		return bairro;
 	}
 
-
 	public void setBairro(String bairro) {
 		this.bairro = bairro;
 	}
-
 
 	public String getCidade() {
 		return cidade;
 	}
 
-
 	public void setCidade(String cidade) {
 		this.cidade = cidade;
 	}
-
 
 	public long getCep() {
 		return cep;
 	}
 
-
 	public void setCep(long cep) {
 		this.cep = cep;
 	}
-
 
 	public int getNumero() {
 		return numero;
 	}
 
-
 	public void setNumero(int numero) {
 		this.numero = numero;
 	}
-
 
 	@Override
 	public int hashCode() {
@@ -80,7 +66,6 @@ public class Endereco {
 		result = prime * result + ((rua == null) ? 0 : rua.hashCode());
 		return result;
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -112,8 +97,5 @@ public class Endereco {
 			return false;
 		return true;
 	}
-	
 
-	
-	
 }

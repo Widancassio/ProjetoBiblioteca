@@ -20,10 +20,9 @@ public interface Fachada {
 	public void EditarLivro(Livro l);
 
 	public void BuscarLivro(Livro l);
-	
+
 	public void AlugarLivro(Livro l, Pessoa pessoa);
-	
+
 	public void DevolverLivro(Livro l, Pessoa pessoa);
-	
-	
+
 }

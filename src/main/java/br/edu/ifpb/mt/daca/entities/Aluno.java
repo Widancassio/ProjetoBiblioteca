@@ -4,43 +4,34 @@ import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-
 @Entity(name = "Aluno_JS")
 @Table(name = "JS_TB_ALUNO")
 @DiscriminatorValue("A")
-public class Aluno extends Pessoa{
-	
-	
-	private long matricula;
-	
-	private String curso;
-	
-	
-//	public Aluno() {
-//		// TODO Auto-generated constructor stub
-//	}
+public class Aluno extends Pessoa {
 
-	
+	private long matricula;
+
+	private String curso;
+
+	// public Aluno() {
+	// // TODO Auto-generated constructor stub
+	// }
 
 	public long getMatricula() {
 		return matricula;
 	}
 
-
 	public void setMatricula(long matricula) {
 		this.matricula = matricula;
 	}
-
 
 	public String getCurso() {
 		return curso;
 	}
 
-
 	public void setCurso(String curso) {
 		this.curso = curso;
 	}
-
 
 	@Override
 	public int hashCode() {
@@ -50,7 +41,6 @@ public class Aluno extends Pessoa{
 		result = prime * result + (int) (matricula ^ (matricula >>> 32));
 		return result;
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -71,11 +61,9 @@ public class Aluno extends Pessoa{
 		return true;
 	}
 
-
 	@Override
 	public String toString() {
 		return "Aluno [matricula=" + matricula + ", curso=" + curso + "]";
 	}
-	
 
 }
