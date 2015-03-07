@@ -2,32 +2,40 @@ package br.edu.ifpb.mt.daca.entities;
 
 import javax.persistence.Embeddable;
 
+
+
 @Embeddable
-public class Autor {
-
+public class Autor{
+	
 	private String nome;
-
-	private String dataNascimento;
-
+	
+	private  String dataNascimento;
+	
+	
 	public Autor() {
 		// TODO Auto-generated constructor stub
 	}
+
 
 	public String getNome() {
 		return nome;
 	}
 
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+
 
 	public String getDataNascimento() {
 		return dataNascimento;
 	}
 
+
 	public void setDataNascimento(String dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
+
 
 	@Override
 	public int hashCode() {
@@ -38,6 +46,7 @@ public class Autor {
 		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
 		return result;
 	}
+
 
 	@Override
 	public boolean equals(Object obj) {
@@ -61,4 +70,7 @@ public class Autor {
 		return true;
 	}
 
+	
+
 }
+

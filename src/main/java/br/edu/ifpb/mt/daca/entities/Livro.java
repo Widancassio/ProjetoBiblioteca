@@ -1,6 +1,8 @@
 package br.edu.ifpb.mt.daca.entities;
 
 
+import java.util.ArrayList;
+
 import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
